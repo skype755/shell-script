@@ -1,5 +1,5 @@
 #!/bin/bash #shebang 
 
 echo "hello world"
-echo"print anothe one"
-echo"do"
+echo "print anothe one"
+echo "do"
