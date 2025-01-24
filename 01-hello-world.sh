@@ -2,4 +2,4 @@
 
 echo "hello world"
 echo"print anothe one"
-echo
+echo"do"
