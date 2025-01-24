@@ -1,4 +1,5 @@
 #!/bin/bash
-LOG_FILE="/var/log/syslog"
-KEYWORDS="error|failed|warning"
-OUTPUT_FILE="/var/log/monitor.log"
+tail -f "$LOG_FILE" | while read LINE; do
+    # Search for keywords in each line
+    echo "$LINE" | grep -E "$KEYWORDS" >> "$OUTPUT_FILE"
+done
